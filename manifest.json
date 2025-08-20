@@ -12,7 +12,7 @@
 		}
 	],
 	"icons": {
-		"128": "./assets/images/pwa-192x192.png"
+		"128": "/assets/images/pwa-192x192.png"
 	},
 	"web_accessible_resources": [
 		{

@@ -8,9 +8,9 @@ export default config([
 		output: {file: './content.js', format: 'es'},
 		plugins,
 	},
-	{
-		input: './src/background.ts',
-		output: {file: './background.js', format: 'es'},
-		plugins,
-	},
+	// {
+	// 	input: './src/background.ts',
+	// 	output: {file: './background.js', format: 'es'},
+	// 	plugins,
+	// },
 ]);
