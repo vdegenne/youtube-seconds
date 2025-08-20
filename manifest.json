@@ -3,9 +3,6 @@
 	"name": "youtube-seconds",
 	"version": "0.2",
 	"permissions": [],
-	"background": {
-		"service_worker": "./background.js"
-	},
 	"content_scripts": [
 		{
 			"matches": ["*://*.youtube.com/*"],
