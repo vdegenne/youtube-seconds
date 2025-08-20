@@ -8,3 +8,4 @@ src/styles/stylesheets/symbols.css
 admin-scripts/serviceAccountKey.json
 .mdicon2svg
 .env
+*.zip
