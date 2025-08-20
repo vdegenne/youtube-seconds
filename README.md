@@ -7,7 +7,7 @@
 - Use `ctrl + ←` to rewind 2 seconds
 - Use `ctrl + →` to fast-forward 2 seconds
 - It works on shorts too (`←` and `→` as well)
-- You can use `Shift + <` and `Shift + >` to change the speed on shorts (just like on normal videos)
+- You can use `shift + <` and `shift + >` to change the speed on shorts (just like on normal videos)
 
 ## Installation
 
