@@ -1,0 +1,51 @@
+{
+	"name": "youtube-seconds",
+	"version": "0.1.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"build": "wireit"
+	},
+	"devDependencies": {
+		"@types/chrome": "^0.1.4",
+		"@vdegenne/rollup": "^0.1.7",
+		"@vite-pwa/assets-generator": "^1.0.0",
+		"html-vision": "^0.3.2",
+		"typescript": "^5.9.2",
+		"wireit": "^0.14.12"
+	},
+	"wireit": {
+		"build": {
+			"dependencies": [
+				"build:content",
+				"pwa-assets"
+			]
+		},
+		"build:content": {
+			"command": "rollup -c",
+			"files": [
+				"./tsconfig.json",
+				"./src",
+				"./rollup.config.js"
+			],
+			"output": [
+				"./content.js",
+				"./background.js"
+			]
+		},
+		"pwa-assets": {
+			"command": "pwa-assets-generator --preset minimal-2023 --html.preset 2023 ./assets/images/logo.svg",
+			"files": [
+				"./assets/images/logo.svg"
+			],
+			"output": [
+				"./assets/images/pwa-64x64.png",
+				"./assets/images/pwa-192x192.png",
+				"./assets/images/pwa-512x512.png",
+				"./assets/images/maskable-icon-512x512.png",
+				"./assets/images/apple-touch-icon-180x180.png",
+				"./assets/images/favicon.ico"
+			]
+		}
+	}
+}

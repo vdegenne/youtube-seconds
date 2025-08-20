@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"strict": true,
+		"useDefineForClassFields": false,
+		"experimentalDecorators": true,
+		"types": ["chrome"],
+		"lib": ["ESNext", "DOM"]
+	}
+}

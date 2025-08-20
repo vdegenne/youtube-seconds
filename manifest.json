@@ -1,15 +1,26 @@
 {
-  "manifest_version": 2,
-  "name": "youtube-seconds",
-  "version": "0.1",
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*.youtube.com/*"
-      ],
-      "js": [
-        "content.js"
-      ]
-    }
-  ]
+	"manifest_version": 3,
+	"name": "youtube-seconds",
+	"version": "0.1",
+	"permissions": [],
+	"background": {
+		"service_worker": "./background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["./content.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	],
+	"icons": {
+		"128": "./assets/images/pwa-192x192.png"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["content.js"],
+			"matches": ["<all_urls>"]
+		}
+	]
 }
