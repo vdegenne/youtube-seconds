@@ -1,4 +1,5 @@
-<img src="YOUR_IMAGE_URL" alt="Logo" width="150"/>
+<img src="https://raw.githubusercontent.com/vdegenne/youtube-seconds/refs/heads/master/assets/images/logo.svg" alt="Logo" width="150"/>
+
 # youtube-seconds
 
 ## Features
