@@ -13,5 +13,3 @@ assets/images/*512x512.png
 admin-scripts/serviceAccountKey.json
 .mdicon2svg
 .env
-content.js
-background.js
